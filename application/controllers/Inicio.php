@@ -14,6 +14,10 @@ class Inicio extends CI_Controller {
 		$this->layout->view('inicio');
 	}
 
+	public function acerca()
+	{
+		$this->layout->view('acerca');
+	}
 }
 
 /* End of file Inicio.php */

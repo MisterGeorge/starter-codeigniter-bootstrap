@@ -10,8 +10,7 @@
 			    		<i class="fa fa-code-fork" aria-hidden="true"></i> Starter-Codeigniter-Bootstrap 1.0
 			    	</h4>
 			    	<p class="card-text">
-			    		Bienvenido a <span class="text-warning">CodeIgniter</span> un potente framework de PHP muy liviano,  construido para desarrolladores que necesitan un kit de herramientas simple y elegante para crear aplicaciones web completas. Este repositorio es un template para tus proyectos con este potente framework,
-			    		el cual incluye:
+			    		Bienvenido a <span class="text-warning">CodeIgniter</span> un potente framework de PHP muy liviano,  construido para desarrolladores que necesitan un kit de herramientas simple y elegante para crear aplicaciones web completas. Este repositorio es un template para tus proyectos con este potente framework, este 'Proyect Template' incluye:
 			    		<ul>
 			    			<li>
 			    				<i class="fa fa-arrow-circle-right text-warning" aria-hidden="true"></i> 
@@ -19,7 +18,7 @@
 			    			</li>
 			    			<li>
 			    				<i class="fa fa-arrow-circle-right text-warning" aria-hidden="true"></i> 
-			    				Bootstrap v4.0.0-beta.2
+			    				Bootstrap v4.0.0-beta.3
 			    			</li>
 			    			<li>
 			    				<i class="fa fa-arrow-circle-right text-warning" aria-hidden="true"></i> 
@@ -33,17 +32,14 @@
 			    	</p>
 			    	<hr>
 			    	<p class="card-text">
-			    		La página que está buscando está siendo generada dinámicamente por CodeIgniter.
+			    		La página que está buscando está siendo generada por el sistema de layout. si desea editar esta página la encontrará localizada en:
 			    	</p>
-			    	<p class="card-text">
-			    		si desea editar esta página la encontrará localizada en:
-			    	</p>
-					<code>application/views/welcome_message.php</code>
+					<code>application/views/inicio/inicio.php</code>
 
 					<p class="card-text">
 						El controlador correspondiente para esta página se encuentra en:
 					</p>
-					<code>application/controllers/Welcome.php</code>
+					<code>application/controllers/Inicio.php</code>
 
 					<p class="card-text">
 						Si usted está explorando CodeIgniter por primera vez, debe comenzar por leer la 
@@ -52,7 +48,7 @@
 			  	</div>
 			  	<div class="card-footer">
 			  		<p class="card-text">
-			  			Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
+			  			Página procesada <strong>{elapsed_time}</strong> segundoss. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
 			  		</p>
 			  	</div>
 			</div>
