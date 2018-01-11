@@ -16,11 +16,11 @@ problemas, así como las características que faltan.
 
 - Clonar el repostorio y/ descomprimir el .zip
 - Vía consola ejecutar el siguiente comando: $ composer update
-- Comprobar el url en application/config/config.php ... $config['base_url'] = 'http://localhost/starter-codeigniter-bootstrap/';
+- Comprobar el url en application/config/config.php ... $config['base_url'] = `http://localhost/starter-codeigniter-bootstrap/`
 
 ## Licencia
 
-Por favor vea el `acuerdo de licencia <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Por favor vea el acuerdo de licencia `https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst`
 
 ## Recursos
 
