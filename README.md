@@ -20,14 +20,14 @@ problemas, así como las características que faltan.
 
 ## Licencia
 
-Por favor vea el acuerdo de licencia `https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst`
+Por favor vea el acuerdo de licencia [Guía del Usuario](https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst)
 
 ## Recursos
 
-* CodeIgniter  <https://www.codeigniter.com/>
-* Bootstrap    <https://getbootstrap.com/>
-* Font Awesome <http://fontawesome.io//>
-* jQuery       <https://jquery.com/>
+* CodeIgniter  [Portal Oficial](https://www.codeigniter.com)
+* Bootstrap    [Portal Oficial](https://getbootstrap.com)
+* Font Awesome [Portal Oficial](http://fontawesome.io)
+* jQuery       [Portal Oficial](http://jquery.com)
 
 ## Reconocimiento y Créditos
 
