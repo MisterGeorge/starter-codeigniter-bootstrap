@@ -1,70 +1,52 @@
-###################
-What is CodeIgniter
-###################
+#############################
+Starter-Codeigniter-Bootstrap
+#############################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Este repositorio 'starter-codeigniter-bootstrap' es un template para
+nuestros proyectos con Codeigniter nuestro potente framework de PHP 
+construido para desarrolladores que necesitan un kit de herramientas
+simple y elegante para crear aplicaciones web completas.
 
-*******************
-Release Information
-*******************
+***************************
+Requerimientos del Servidor
+***************************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Se recomienda PHP versión 5.6 o posterior.
 
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+Debería funcionar en 5.3.7 también, pero le recomendamos que NO ejecute
+versiones antiguas de PHP, debido a la seguridad y el rendimiento potenciales
+problemas, así como las características que faltan.
 
 *******************
-Server Requirements
+Guía de Instalación
 *******************
 
-PHP version 5.6 or newer is recommended.
+- Clonar el repostorio y/ descomprimir el .zip
+- Vía consola ejecutar el siguiente comando: $ composer update
+- Comprobar el url en application/config/config.php ... $config['base_url'] = 'http://localhost/starter-codeigniter-bootstrap/';
 
-It should work on 5.4.8 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+********
+Licencia
+********
 
-************
-Installation
-************
+Por favor vea el `acuerdo de licencia <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+********
+Recursos
+********
 
-*******
-License
-*******
+-  `CodeIgniter  <https://www.codeigniter.com/>`_
+-  `Bootstrap 	 <https://getbootstrap.com/>`_
+-  `Font Awesome <http://fontawesome.io//>`_
+-  `jQuery 		 <https://jquery.com/>`_
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+*************************
+Reconocimiento y Créditos
+*************************
 
-*********
-Resources
-*********
+El equipo de CodeIgniter agradece a EllisLab, todos los colaboradores 
+del proyecto CodeIgniter y a usted, el usuario de CodeIgniter. Así
+como también a:
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+-  `Luis Mata  <https://gist.github.com/lalan21j/>`_ - Sistema para crear y generar las etiquetas 'Meta'.
+-  `Cesar Cansino <http://www.cesarcancino.com//>`_ - Sistema de Layout(modificado para este repo).
