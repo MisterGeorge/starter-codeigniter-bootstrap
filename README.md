@@ -16,7 +16,7 @@ problemas, así como las características que faltan.
 
 1. Clonar el repostorio y/ó descomprimir el .zip
 2. Vía consola ejecutar el siguiente comando: `$ composer update`
-3. Comprobar el url en application/config/config.php: `$config['base_url'] = http://localhost/starter-codeigniter-bootstrap/`
+3. Comprobar el url en application/config/config.php: `$config['base_url'] = http://localhost/starter-codeigniter-bootstrap/` y modificar por el nombre del proyecto a desarrollar.
 
 ### Licencia
 
