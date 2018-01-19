@@ -18,7 +18,7 @@
 			    			</li>
 			    			<li>
 			    				<i class="fa fa-arrow-circle-right text-warning" aria-hidden="true"></i> 
-			    				Bootstrap v4.0.0-beta.3
+			    				Bootstrap v4.0.0
 			    			</li>
 			    			<li>
 			    				<i class="fa fa-arrow-circle-right text-warning" aria-hidden="true"></i> 
