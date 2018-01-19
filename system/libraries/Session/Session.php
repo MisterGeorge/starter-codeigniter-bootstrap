@@ -6,7 +6,7 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+ * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 2.0.0
@@ -105,7 +105,23 @@ class CI_Session {
 		$class = new $class($this->_config);
 		if ($class instanceof SessionHandlerInterface)
 		{
-			session_set_save_handler($class, TRUE);
+			if (is_php('5.4'))
+			{
+				session_set_save_handler($class, TRUE);
+			}
+			else
+			{
+				session_set_save_handler(
+					array($class, 'open'),
+					array($class, 'close'),
+					array($class, 'read'),
+					array($class, 'write'),
+					array($class, 'destroy'),
+					array($class, 'gc')
+				);
+
+				register_shutdown_function('session_write_close');
+			}
 		}
 		else
 		{
@@ -174,6 +190,9 @@ class CI_Session {
 	 */
 	protected function _ci_load_classes($driver)
 	{
+		// PHP 5.4 compatibility
+		interface_exists('SessionHandlerInterface', FALSE) OR require_once(BASEPATH.'libraries/Session/SessionHandlerInterface.php');
+
 		$prefix = config_item('subclass_prefix');
 
 		if ( ! class_exists('CI_Session_driver', FALSE))
@@ -222,10 +241,8 @@ class CI_Session {
 			{
 				return $prefix.$class;
 			}
-			else
-			{
-				log_message('debug', 'Session: '.$prefix.$class.".php found but it doesn't declare class ".$prefix.$class.'.');
-			}
+
+			log_message('debug', 'Session: '.$prefix.$class.".php found but it doesn't declare class ".$prefix.$class.'.');
 		}
 
 		return 'CI_'.$class;

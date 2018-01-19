@@ -6,7 +6,7 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+ * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -161,10 +161,6 @@ class CI_Exceptions {
 		{
 			$templates_path = VIEWPATH.'errors'.DIRECTORY_SEPARATOR;
 		}
-		else
-		{
-			$templates_path = rtrim($templates_path, '/\\').DIRECTORY_SEPARATOR;
-		}
 
 		if (is_cli())
 		{
@@ -197,10 +193,6 @@ class CI_Exceptions {
 		if (empty($templates_path))
 		{
 			$templates_path = VIEWPATH.'errors'.DIRECTORY_SEPARATOR;
-		}
-		else
-		{
-			$templates_path = rtrim($templates_path, '/\\').DIRECTORY_SEPARATOR;
 		}
 
 		$message = $exception->getMessage();
@@ -247,10 +239,6 @@ class CI_Exceptions {
 		if (empty($templates_path))
 		{
 			$templates_path = VIEWPATH.'errors'.DIRECTORY_SEPARATOR;
-		}
-		else
-		{
-			$templates_path = rtrim($templates_path, '/\\').DIRECTORY_SEPARATOR;
 		}
 
 		$severity = isset($this->levels[$severity]) ? $this->levels[$severity] : $severity;
