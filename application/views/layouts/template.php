@@ -34,11 +34,8 @@
   </head>
   <body>
     <!-- Contenido y carga dinámica de las vistas -->
-    <?php echo $content_for_layout; ?>
+    <?php $this->load->view($content_for_layout); ?>
     <!-- FOOTER -->
-    <footer id="footer">
-        
-    </footer>
     <!-- jQuery, Bootstrap, Libreries JS, Main JS (Do not remove) and Waypoints-->
     <script src="<?php echo base_url('vendor/components/jquery/jquery.min.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo base_url('assets/js/popper.min.js'); ?>" type="text/javascript"></script>
