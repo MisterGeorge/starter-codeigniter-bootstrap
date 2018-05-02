@@ -12,8 +12,8 @@
 	},
 	"require": {
 		"php": ">=5.4.8",
-		"components/jquery": "^3.2",
-		"twbs/bootstrap": "4.0.0",
+		"components/jquery": "^3.3",
+		"twbs/bootstrap": "4.1.1",
 		"fortawesome/font-awesome": "^4.7"
 	},
 	"suggest": {
