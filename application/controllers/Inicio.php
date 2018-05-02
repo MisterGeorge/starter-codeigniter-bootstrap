@@ -11,13 +11,10 @@ class Inicio extends CI_Controller {
 	
 	public function index()
 	{
-		$this->layout->view('inicio');
+		$data['content_for_layout'] = 'inicio';
+        $this->parser->parse('layouts/template',$data);
 	}
 
-	public function acerca()
-	{
-		$this->layout->view('acerca');
-	}
 }
 
 /* End of file Inicio.php */
