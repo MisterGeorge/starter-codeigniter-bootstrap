@@ -68,7 +68,7 @@ class MY_Lang extends CI_Lang {
 	 * 
 	 * @var string
 	 */
-	public $base_language = 'english';
+	public $base_language = 'spanish';
 
 	/**
 	 * Class constructor
