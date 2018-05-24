@@ -113,6 +113,16 @@ class Layout
 	}
 
 	/**
+	 * [getTitle description]: Este método nos permite obtener o mostrar el valor
+	 * de la propiedad o elemento.
+	 * @return [type] [description]
+	 */
+	public function getTitle()
+	{
+		return $this->title;
+	}
+
+	/**
 	 * [setauthor description]: Este método nos da acceso al author y asignar 
 	 * un nuevo valor de la propiedad o del elemento.
 	 * @param [type] $author [description]
@@ -120,6 +130,16 @@ class Layout
 	public function setAuthor($author)
 	{
 		$this->author = $author;
+	}
+
+	/**
+	 * [getauthor description]: Este método nos permite obtener o mostrar el valor
+	 * de la propiedad o elemento.
+	 * @return [type] [description]
+	 */
+	public function getAuthor()
+	{
+		return $this->author;
 	}
 
 	/**
@@ -133,66 +153,6 @@ class Layout
 	}
 
 	/**
-	 * [setKeywords description]: Este método nos da acceso a las keywords y asignar 
-	 * un nuevo valor de la propiedad o del elemento.
-	 * @param [type] $keywords [description]
-	 */
-	public function setKeywords($keywords)
-	{
-		$this->keywords = $keywords;
-	}
-
-	/**
-	 * [setApplicationName description]: Este método nos da acceso al nombre de
-	 * de la aplicación y asignar un nuevo valor de la propiedad o del elemento.
-	 * @param [type] $applicationName [description]
-	 */
-	public function setApplicationName($applicationName)
-	{
-		$this->applicationName = $applicationName;
-	}
-
-	/**
-	 * [setGenerator description]: Este método nos da acceso al Generador de
-	 * de la aplicación y asignar un nuevo valor de la propiedad o del elemento.
-	 * @param [type] $generator [description]
-	 */
-	public function setGenerator($generator)
-	{
-		$this->generator = $generator;
-	}
-
-	/**
-	 * [setRobots description]: Este método nos da acceso a los Robots de
-	 * de la aplicación y asignar un nuevo valor de la propiedad o del elemento.
-	 * @param [type] $robots [description]
-	 */
-	public function setRobots($robots)
-	{
-		$this->robots = $robots;
-	}
-
-	/**
-	 * [getTitle description]: Este método nos permite obtener o mostrar el valor
-	 * de la propiedad o elemento.
-	 * @return [type] [description]
-	 */
-	public function getTitle()
-	{
-		return $this->title;
-	}	
-
-	/**
-	 * [getauthor description]: Este método nos permite obtener o mostrar el valor
-	 * de la propiedad o elemento.
-	 * @return [type] [description]
-	 */
-	public function getAuthor()
-	{
-		return $this->author;
-	}
-
-	/**
 	 * [getDescripcion description]: Este método nos permite obtener o mostrar el valor
 	 * de la propiedad o elemento.
 	 * @return [type] [description]
@@ -200,6 +160,16 @@ class Layout
 	public function getDescripcion()
 	{
 		return $this->descripcion;
+	}
+
+	/**
+	 * [setKeywords description]: Este método nos da acceso a las keywords y asignar 
+	 * un nuevo valor de la propiedad o del elemento.
+	 * @param [type] $keywords [description]
+	 */
+	public function setKeywords($keywords)
+	{
+		$this->keywords = $keywords;
 	}
 
 	/**
@@ -213,6 +183,16 @@ class Layout
 	}
 
 	/**
+	 * [setApplicationName description]: Este método nos da acceso al nombre de
+	 * de la aplicación y asignar un nuevo valor de la propiedad o del elemento.
+	 * @param [type] $applicationName [description]
+	 */
+	public function setApplicationName($applicationName)
+	{
+		$this->applicationName = $applicationName;
+	}
+
+	/**
 	 * [getApplicationName description]: Este método nos permite obtener o mostrar el valor
 	 * de la propiedad o elemento.
 	 * @return [type] [description]
@@ -220,6 +200,16 @@ class Layout
 	public function getApplicationName()
 	{
 		return $this->applicationName;
+	}
+
+	/**
+	 * [setGenerator description]: Este método nos da acceso al Generador de
+	 * de la aplicación y asignar un nuevo valor de la propiedad o del elemento.
+	 * @param [type] $generator [description]
+	 */
+	public function setGenerator($generator)
+	{
+		$this->generator = $generator;
 	}
 
 	/**
@@ -233,6 +223,16 @@ class Layout
 	}
 
 	/**
+	 * [setRobots description]: Este método nos da acceso a los Robots de
+	 * de la aplicación y asignar un nuevo valor de la propiedad o del elemento.
+	 * @param [type] $robots [description]
+	 */
+	public function setRobots($robots)
+	{
+		$this->robots = $robots;
+	}
+
+	/**
 	 * [getRobots description]: Este método nos permite obtener o mostrar el valor
 	 * de la propiedad o elemento.
 	 * @return [type] [description]
@@ -240,7 +240,7 @@ class Layout
 	public function getRobots()
 	{
 		return $this->robots;
-	}
+	}	
 
 	/**
 	 * Captura y formatea los archivos JS para insertar a la vista
