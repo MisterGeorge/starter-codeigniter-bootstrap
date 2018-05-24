@@ -28,8 +28,7 @@
     <link href="<?php echo base_url('vendor/fortawesome/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
     <link href="<?php echo base_url('assets/css/styles.css'); ?>" rel="stylesheet" type="text/css">
     <!-- CSS auxiliares -->
-      <?php echo $this->layout->css; ?> 
-      <?php echo $this->layout->js; ?> 
+      <?php echo $this->layout->css; ?>
     <!-- fin auxiliares -->
   </head>
   <body>
@@ -41,5 +40,8 @@
     <script src="<?php echo base_url('assets/js/popper.min.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo base_url('vendor/twbs/bootstrap/dist/js/bootstrap.min.js'); ?>" type="text/javascript"></script>
     <script src="<?php echo base_url('assets/js/main.js'); ?>" type="text/javascript"></script>
+    <!-- JS auxiliares -->
+      <?php echo $this->layout->js; ?> 
+    <!-- fin auxiliares -->
   </body>
 </html>
