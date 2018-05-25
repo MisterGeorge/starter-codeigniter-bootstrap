@@ -7,7 +7,7 @@
 			  	</div>
 			  	<div class="card-body">
 			    	<h4 class="card-title">
-			    		<i class="fa fa-code-fork" aria-hidden="true"></i> Starter-Codeigniter-Bootstrap 1.0
+			    		<i class="fa fa-code-fork" aria-hidden="true"></i> Starter-Codeigniter-Bootstrap 1.5
 			    	</h4>
 			    	<p class="card-text">
 			    		Bienvenido a <span class="text-warning">CodeIgniter</span> un potente framework de PHP muy liviano,  construido para desarrolladores que necesitan un kit de herramientas simple y elegante para crear aplicaciones web completas. Este repositorio es un template para tus proyectos con este potente framework, este 'Proyect Template' incluye:
