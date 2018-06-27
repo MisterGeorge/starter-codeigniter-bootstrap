@@ -15,9 +15,20 @@ problemas, así como las características que faltan.
 ### Guía de Instalación
 
 1. Clonar el repostorio y/ó descomprimir el .zip
-2. Instalar vía consola `$ composer` como gestor de paquetes
-3. Vía consola ejecutar el siguiente comando: `$ composer update`
-4. Comprobar que todas las dependencias mínimas del proyectos sea instaladas y/o estén actualizadas.
+2. Instalar vía Composer, ó
+3. Instalar vía Yarn
+
+#### Instalación via `$ composer`
+1. Instalar vía consola `$ composer` como gestor de paquetes
+2. Vía consola ejecutar el siguiente comando: `$ composer update`
+3. Comprobar que todas las dependencias mínimas del proyectos sea instaladas y/o estén actualizadas.
+4. Modificar la ruta de los enlaces a: vendor
+
+#### Instalación via `$ yarn`
+1. Instalar vía consola `$ yarn` como gestor de paquetes
+2. Vía consola ejecutar el siguiente comando: `$ yarn upgrade`
+3. Comprobar que todas las dependencias mínimas del proyectos sea instaladas y/o estén actualizadas.
+4. Modificar la ruta de los enlaces a: node_modules
 
 ### Licencia
 
