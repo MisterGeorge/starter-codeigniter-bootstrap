@@ -24,9 +24,9 @@
       echo meta($meta);
     ?>
     <!-- Custom Core CSS -->
-    <link href="<?php echo base_url('vendor/twbs/bootstrap/dist/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url('vendor/fortawesome/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url('assets/css/styles.css'); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('../vendor/twbs/bootstrap/dist/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('../vendor/fortawesome/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('../assets/css/styles.css'); ?>" rel="stylesheet" type="text/css">
     <!-- CSS auxiliares -->
       <?php echo $this->layout->css; ?>
     <!-- fin auxiliares -->
@@ -36,10 +36,10 @@
     <?php $this->load->view($content_for_layout); ?>
     <!-- FOOTER -->
     <!-- jQuery, Bootstrap, Libreries JS, Main JS (Do not remove) and Waypoints-->
-    <script src="<?php echo base_url('vendor/components/jquery/jquery.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url('assets/js/popper.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url('vendor/twbs/bootstrap/dist/js/bootstrap.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url('assets/js/main.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('../vendor/components/jquery/jquery.min.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('../assets/js/popper.min.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('../vendor/twbs/bootstrap/dist/js/bootstrap.min.js'); ?>" type="text/javascript"></script>
+    <script src="<?php echo base_url('../assets/js/main.js'); ?>" type="text/javascript"></script>
     <!-- JS auxiliares -->
       <?php echo $this->layout->js; ?> 
     <!-- fin auxiliares -->
