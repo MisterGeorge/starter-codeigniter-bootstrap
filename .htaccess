@@ -3,7 +3,7 @@ RewriteEngine on
 RedirectMatch 403 ^/(system).*$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond $1 !^(index\.php?|robots\.txt|sitemap\.xml|assets|vendor)
+RewriteCond $1 !^(index\.php?|robots\.txt|sitemap\.xml|assets|vendor|node_modules)
 RewriteRule ^(.*)$ index.php?/$1 [L]
 
 # Comprimir los contenidos que sean de cualquiera de estos tipos
