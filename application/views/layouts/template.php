@@ -24,24 +24,26 @@
       echo meta($meta);
     ?>
     <!-- Custom Core CSS -->
-    <link href="<?php echo base_url('../vendor/twbs/bootstrap/dist/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url('../vendor/fortawesome/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url('../assets/css/styles.css'); ?>" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(''); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(''); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/styles.css'); ?>">
     <!-- CSS auxiliares -->
-      <?php echo $this->layout->css; ?>
+    <?php echo $this->layout->css; ?>
     <!-- fin auxiliares -->
   </head>
   <body>
-    <!-- Contenido y carga dinámica de las vistas -->
-    <?php $this->load->view($content_for_layout); ?>
+    <main>
+      <!-- Contenido y carga dinámica de las vistas -->
+      <?php $this->load->view($content_for_layout); ?>
+    </main>
     <!-- FOOTER -->
-    <!-- jQuery, Bootstrap, Libreries JS, Main JS (Do not remove) and Waypoints-->
-    <script src="<?php echo base_url('../vendor/components/jquery/jquery.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url('../assets/js/popper.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url('../vendor/twbs/bootstrap/dist/js/bootstrap.min.js'); ?>" type="text/javascript"></script>
-    <script src="<?php echo base_url('../assets/js/main.js'); ?>" type="text/javascript"></script>
+    <!-- jQuery, Popper, Bootstrap, Libreries JS, Main JS (Do not remove) and Waypoints-->
+    <script src="<?php echo base_url(''); ?>"></script>
+    <script src="<?php echo base_url(''); ?>"></script>
+    <script src="<?php echo base_url(''); ?>"></script>
     <!-- JS auxiliares -->
-      <?php echo $this->layout->js; ?> 
+    <?php echo $this->layout->js; ?> 
     <!-- fin auxiliares -->
+    <script src="<?php echo base_url('assets/js/main.min.js'); ?>"></script>
   </body>
 </html>
