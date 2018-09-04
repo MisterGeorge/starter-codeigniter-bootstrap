@@ -34,7 +34,7 @@
 			    	<p class="card-text">
 			    		Con la configuración aplicada se debe apuntar a la siguiente <em>url</em>:
 			    	</p>
-					<code>http://localhost/starter-codeigniter-bootstrap/public/</code>
+					<code>http://localhost/starter-codeigniter-bootstrap</code>
 
 			    	<p class="card-text">
 			    		La página que está buscando está siendo generada por el sistema de layout. si desea editar esta página la encontrará localizada en:
