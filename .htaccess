@@ -1,0 +1,78 @@
+# Configuración principal
+<IfModule mod_rewrite.c>
+  # Suponiendo que el listado de directorios está desactivado, 
+  # permitimos indexación y activamos el rewrite
+  Options +FollowSymLinks -Indexes
+  RewriteEngine on
+
+  # con esta instrucci贸n bloqueamos el acceso a la carpeta system, 
+  # si es que se encuentra en el directorio web
+  RedirectMatch 403 ^/(system).*$
+
+  # Antes de redireccionar, se verifica que la petición no sea
+  # a un directorio o archivo existente
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond $1 !^(index\.php?|robots\.txt|sitemap\.xml|assets|node_modules)
+  RewriteRule ^(.*)$ index.php?/$1 [L]
+
+  # Redireccionar siempre a https
+  #RewriteCond %{HTTPS} off
+  #RewriteCond %{HTTP_HOST} ^tudominio.com [NC]
+  #RewriteCond %{HTTP_HOST} !=www.tudominio.com
+  #RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Prevenir el hotlinking
+  #RewriteCond %{HTTP_REFERER} !^https://(.+\.)?tudominio\.com/ [NC]
+  #RewriteCond %{HTTP_REFERER} !^$
+  #RewriteRule .*\.(jpg|gif|bmp|png)$ https://hotlink.tudominio/no_se_permite_hotlinking.jpg [L]
+</IfModule>
+
+# Comprimir los contenidos que sean de cualquiera de estos tipos
+<IfModule mod_filter.c>
+    AddOutputFilterByType DEFLATE application/atom+xml \
+                                  application/javascript \
+                                  application/json \
+                                  application/rss+xml \
+                                  application/vnd.ms-fontobject \
+                                  application/x-font-ttf \
+                                  application/x-web-app-manifest+json \
+                                  application/xhtml+xml \
+                                  application/xml \
+                                  font/opentype \
+                                  image/svg+xml \
+                                  image/x-icon \
+                                  text/css \
+                                  text/html \
+                                  text/plain \
+                                  text/x-component \
+                                  text/xml
+</IfModule>
+
+# Almacenamiento en caché de imágenes
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/gif A432000
+  ExpiresByType image/jpg A432000
+  ExpiresByType image/jpeg A432000
+  ExpiresByType image/png A432000
+  ExpiresByType image/ico A432000
+  ExpiresByType image/bmp A432000
+  ExpiresByType text/css A432000
+  ExpiresByType text/javascript A432000
+  ExpiresByType application/javascript A432000
+  ExpiresByType application/x-javascript A432000
+</ifmodule>
+
+# Aprovechar el almacenamiento en caché del navegador
+<IfModule mod_expires.c>
+  # Habitamos el vencimiento
+  ExpiresActive On
+
+  # Expirar imágenes GIF después de un mes en la memoria caché del cliente
+  ExpiresByType image/gif A2592000
+  
+  # Los documentos HTML son buenos por una semana desde el
+  # vez que fueron cambiados
+  ExpiresByType text/html M604800
+</IfModule>
