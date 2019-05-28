@@ -1,26 +1,36 @@
 {
   "name": "starter-codeigniter-bootstrap",
-  "version": "2.0",
-  "description": "es un template para proyectos con Codeigniter y Bootstrap",
+  "version": "3.0.0",
+  "description": "Este repositorio 'starter-codeigniter-bootstrap' es un template para\r nuestros proyectos con Codeigniter nuestro potente framework de PHP \r construido para desarrolladores que necesitan un kit de herramientas\r simple y elegante para crear aplicaciones web completas.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterGeorge/starter-codeigniter-bootstrap.git"
+  },
   "keywords": [
     "codeIgniter",
     "mvc",
     "bootstrap",
     "yarn",
-    "fontawesome"
+    "fontawesome",
+    "npm"
   ],
-  "main": "index.js",
   "author": {
     "name": "Jorge Armando Pacheco Del real",
     "email": "jarmandopacheco@gmail.com",
     "url": "https://github.com/MisterGeorge/"
   },
-  "license": "MIT",
-  "private": true,
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MisterGeorge/starter-codeigniter-bootstrap/issues"
+  },
+  "homepage": "https://github.com/MisterGeorge/starter-codeigniter-bootstrap#readme",
+  "devDependencies": {},
   "dependencies": {
-    "bootstrap": "^4.1.1",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "bootstrap": "^4.3.1",
+    "fontawesome": "^5.6.3",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.15.0"
   }
 }
