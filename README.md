@@ -1,6 +1,6 @@
 # starter-codeigniter-bootstrap
 Este repositorio 'starter-codeigniter-bootstrap' es un template para
-nuestros proyectos con Codeigniter nuestro potente framework de PHP 
+nuestros proyectos con Codeigniter nuestro potente framework de PHP
 construido para desarrolladores que necesitan un kit de herramientas
 simple y elegante para crear aplicaciones web completas.
 
@@ -15,14 +15,7 @@ problemas, así como las características que faltan.
 ### Guía de Instalación
 
 1. Clonar el repostorio y/ó descomprimir el .zip
-2. Instalar vía Composer, ó
-3. Instalar vía Yarn
-
-#### Instalación via `$ composer`
-1. Instalar vía consola `$ composer` como gestor de paquetes
-2. Vía consola ejecutar el siguiente comando: `$ composer update`
-3. Comprobar que todas las dependencias mínimas del proyectos sea instaladas y/o estén actualizadas.
-4. Modificar la ruta de los enlaces a: vendor
+2. Instalar vía Yarn.
 
 #### Instalación via `$ yarn`
 1. Instalar vía consola `$ yarn` como gestor de paquetes
@@ -41,6 +34,7 @@ Por favor vea el acuerdo de licencia [Guía del Usuario](https://github.com/bcit
 * [Bootstrap](https://getbootstrap.com)
 * [Font Awesome](http://fontawesome.io)
 * [jQuery](http://jquery.com)
+* [Yarn](https://yarnpkg.com/es-ES/)
 
 ### Reconocimiento y Créditos
 
@@ -51,7 +45,7 @@ Así como también a:
 * Luis Mata [GitHub](https://gist.github.com/lalan21j) - Sistema para crear y generar las etiquetas 'Meta'.
 * Cesar Cansino [Pórtal Oficial](http://www.cesarcancino.com/) - Sistema de Layout(modificado para este repo).
 
-### Soporte y/ó Ayuda 
+### Soporte y/ó Ayuda
 
 * Podrá conseguir más ayuda escribiendo a jarmandopacheco@gmail.com
 * El propietario de este mismo repositorio o cualquier de sus colaboradores
