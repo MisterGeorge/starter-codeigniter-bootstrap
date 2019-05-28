@@ -9,42 +9,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Layout
 {
 	/**
-	 * @var object Instancia CodeIgniter
+	 * [$CI description]: Instancia del Objeto de CodeIgniter.
+	 * @var [type]
 	 */
 	private $CI;
 
 	/**
-	 * @var string Nombre del layout actual
+	 * [$layout description]: Nombre del layout por defecto.
+	 * @var string
 	 */
-	public $layout		= 'default';
+	public $layout		= 'app';
 
 	/**
-	 * Archivos JS para insertar en el layout
+	 * [$js description]: Archivos JS para insertar en el layout.
 	 * @var string
 	 */
 	public $js			= '';
 
 	/**
-	 * Archivos CSS para insertar en el layout
+	 * [$css description]: Archivos CSS para insertar en el layout.
 	 * @var string
 	 */
 	public $css			= '';
 
 	/**
-	 * Constructor
-	 *
-	 * Inicializa la instancia de CodeIgniter y setea el layout por defecto
+	 * [__construct description]
+	 * @param string $layout [description]: Inicializa la instancia de
+	 * CodeIgniter y setea el layout por defecto.
 	 */
-	public function __construct($layout = 'default')
+	public function __construct($layout = 'app')
 	{
 		$this->CI		=& get_instance();
 		$this->layout	= $layout;
 	}
 
 	/**
-	 * Setea el layout a utilizar
-	 *
-	 * @param	string		$layout			Nombre del layout
+	 * [setLayout description]: Setea el layout a utilizar
+	 * @param [type] $layout [description]: Nombre del layout
 	 */
 	function setLayout($layout)
 	{
@@ -93,9 +94,9 @@ class Layout
 	/**
 	 * Variables para mejorar el SEO del sitio
 	 * @var string
-	 */	
+	 */
 	public $title       	= 'Aplicación Web';
-	public $author 			= 'nombre del author';		
+	public $author 			= 'nombre del author';
 	public $descripcion 	= 'descripción seo por defecto';
 	public $keywords    	= 'palabras clave';
 	public $applicationName = 'nombre de tu app';
@@ -103,7 +104,7 @@ class Layout
 	public $robots			= 'index, follow';
 
 	/**
-	 * [setTitle description]: Este método nos da acceso al título y asignar 
+	 * [setTitle description]: Este método nos da acceso al título y asignar
 	 * un nuevo valor de la propiedad o del elemento.
 	 * @param [type] $title [description]
 	 */
@@ -123,7 +124,7 @@ class Layout
 	}
 
 	/**
-	 * [setauthor description]: Este método nos da acceso al author y asignar 
+	 * [setauthor description]: Este método nos da acceso al author y asignar
 	 * un nuevo valor de la propiedad o del elemento.
 	 * @param [type] $author [description]
 	 */
@@ -143,7 +144,7 @@ class Layout
 	}
 
 	/**
-	 * [setDescripcion description]: Este método nos da acceso a la descripción y 
+	 * [setDescripcion description]: Este método nos da acceso a la descripción y
 	 * asignar un nuevo valor de la propiedad o del elemento.
 	 * @param [type] $descripcion [description]
 	 */
@@ -163,7 +164,7 @@ class Layout
 	}
 
 	/**
-	 * [setKeywords description]: Este método nos da acceso a las keywords y asignar 
+	 * [setKeywords description]: Este método nos da acceso a las keywords y asignar
 	 * un nuevo valor de la propiedad o del elemento.
 	 * @param [type] $keywords [description]
 	 */
@@ -240,7 +241,7 @@ class Layout
 	public function getRobots()
 	{
 		return $this->robots;
-	}	
+	}
 
 	/**
 	 * Captura y formatea los archivos JS para insertar a la vista
