@@ -22,21 +22,20 @@
       echo meta($meta);
     ?>
     <!-- Custom Core CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/app.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('dist/css/app.css'); ?>">
     <!-- CSS auxiliares -->
     <?php echo $this->layout->css; ?>
     <!-- fin auxiliares -->
   </head>
-  <body id="app">
-    <main>
+  <body>
+    <main id="app">
       <!-- Contenido y carga dinámica de las vistas -->
       <?php $this->load->view($content_for_layout); ?>
     </main>
-    <!-- FOOTER -->
     <!-- jQuery, Popper, Bootstrap, Libreries JS, Main JS (Do not remove) and Waypoints-->
+    <script src="<?php echo base_url('dist/js/app.js'); ?>"></script>
     <!-- JS auxiliares -->
     <?php echo $this->layout->js; ?>
     <!-- fin auxiliares -->
-    <script src="<?php echo base_url('assets/js/bundle.js'); ?>"></script>
   </body>
 </html>
