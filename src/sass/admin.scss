@@ -1,0 +1,18 @@
+// Variables
+@import 'variables';
+
+// Mixins
+@import 'mixins';
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Core-ui
+@import "~@coreui/coreui/scss/coreui";
+@import '~@coreui/icons/scss/coreui-icons';
+
+// Flag & Simple-line-icons
+@import '~flag-icon-css/sass/flag-icon';
+@import '~simple-line-icons/scss/simple-line-icons';
+
+@import "custom_admin";
