@@ -35,6 +35,7 @@ Por favor vea el acuerdo de licencia [Guía del Usuario](https://github.com/bcit
 * [Font Awesome](http://fontawesome.io)
 * [jQuery](http://jquery.com)
 * [Yarn](https://yarnpkg.com/es-ES/)
+* [HMVC Extension](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/src/codeigniter-3.x/)
 
 ### Reconocimiento y Créditos
 
@@ -44,8 +45,9 @@ Así como también a:
 
 * Luis Mata [GitHub](https://gist.github.com/lalan21j) - Sistema para crear y generar las etiquetas 'Meta'.
 * Cesar Cansino [Pórtal Oficial](http://www.cesarcancino.com/) - Sistema de Layout(modificado para este repo).
+* Wiredesignz [Canal Oficial](https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/src/codeigniter-3.x/) - Extensión HMVC.
 
 ### Soporte y/ó Ayuda
 
 * Podrá conseguir más ayuda escribiendo a jarmandopacheco@gmail.com
-* El propietario de este mismo repositorio o cualquier de sus colaboradores
+* El propietario de este mismo repositorio o cualquiera de sus colaboradores
