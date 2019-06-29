@@ -82,7 +82,7 @@ class Layout
 	 */
 	public function element($view = null, $data = null, $return = false)
 	{
-		$element			= "elements/{$view}";
+		$element			= "partials/{$view}";
 		$content_for_layout	= $data;
 
 		if ( $return )
