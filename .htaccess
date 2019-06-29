@@ -1,11 +1,11 @@
 # Configuración principal
 <IfModule mod_rewrite.c>
-  # Suponiendo que el listado de directorios está desactivado, 
+  # Suponiendo que el listado de directorios está desactivado,
   # permitimos indexación y activamos el rewrite
   Options +FollowSymLinks -Indexes
   RewriteEngine on
 
-  # con esta instrucci贸n bloqueamos el acceso a la carpeta system, 
+  # con esta instrucci贸n bloqueamos el acceso a la carpeta system,
   # si es que se encuentra en el directorio web
   RedirectMatch 403 ^/(system).*$
 
@@ -13,7 +13,7 @@
   # a un directorio o archivo existente
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond $1 !^(index\.php?|robots\.txt|sitemap\.xml|assets|node_modules)
+  RewriteCond $1 !^(index\.php?|robots\.txt|sitemap\.xml|dist|node_modules)
   RewriteRule ^(.*)$ index.php?/$1 [L]
 
   # Redireccionar siempre a https
